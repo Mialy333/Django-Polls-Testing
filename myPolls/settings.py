@@ -17,6 +17,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
@@ -29,7 +30,7 @@ SECRET_KEY = 'django-insecure-8$szvrseruii0woh=#35^k6-x9h(0f!_r0i)=l7jh-i(#22i=c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['uvote.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['uvote.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
