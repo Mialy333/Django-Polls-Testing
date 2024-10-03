@@ -28,7 +28,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 SECRET_KEY = 'django-insecure-8$szvrseruii0woh=#35^k6-x9h(0f!_r0i)=l7jh-i(#22i=c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['uvote-69c459b41016.herokuapp.com', 'localhost', '127.0.0.1']
 
@@ -123,6 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),  # ou ajustez selon la structure de votre projet
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
