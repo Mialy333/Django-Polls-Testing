@@ -8,7 +8,7 @@ from .models import Choice, Question
 class ChoiceInline(admin.TabularInline):
     """ TabulaInline: pour optimiser l'affichage en tableau des objets liés sans prendre trop de place """
     model = Choice
-    extra = 3
+    extra = 9
     """ Penser à intégrer un test unitaire pour être sûre d'avoir uniquement 3 choix d'affiché """
 
 class QuestionAdmin(admin.ModelAdmin):
