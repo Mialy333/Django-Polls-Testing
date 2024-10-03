@@ -59,7 +59,7 @@ body {
 .carousel {
     overflow: hidden;
     /* Masque le débordement */
-    height: 100px;
+    height: 70px;
     /* Ajuste la hauteur du carrousel */
     display: flex;
     justify-content: center;
@@ -68,6 +68,7 @@ body {
     /* Centre verticalement */
     margin-top: 150px;
     margin-left: 100px;
+    margin-right: 100px;
     animation: scroll 20s linear infinite;
 }
 
