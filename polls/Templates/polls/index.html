@@ -1,7 +1,10 @@
-{% load static %}
-<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<!-- index.html -->
+{% extends 'polls/base.html' %}
 
-<h1 class="poll-title">Vote.</h1>
+{% load static %}
+
+{% block content %}
+<h1 class="poll-title"><span class="color">u</span>Vote.</h1>
 <h2 class="motto">Your opinion matters 💬</h2>
 
 <p class="instruction">▶ Comment ça marche? C'est simple, clique sur un thème et vote 👇</p>
@@ -17,6 +20,6 @@
 {% else %}
 <p>No polls are available.</p>
 {% endif %}
-</div>
-
+<p class="bye">Passe un bon moment! 😄</p>
 <script src="{% static 'polls/script.js' %}"></script>
+{% endblock %}

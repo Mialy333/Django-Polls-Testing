@@ -45,14 +45,20 @@ body {
     margin-right: 30px;
 }
 
-.instruction {
+.instruction,
+.bye {
     text-align: center;
     /* Centrer le motto */
     font-size: 1.7rem;
-    font-weight: 200;
+    font-weight: 500;
     color: white;
     margin-top: 100px;
     margin-bottom: 50px;
+}
+
+.color {
+    color: rgb(255, 191, 0);
+
 }
 
 /* Style pour le carrousel */
