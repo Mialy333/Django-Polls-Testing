@@ -17,6 +17,12 @@ python3 -m pip install Django
 
 ```sh
 python3 manage.py runserver
+
+add http://127.0.0.1:8000/polls/ on URL
+
+to access to the admin: replace /polls by http://127.0.0.1:8000/admin/
+- Username: MialyTDD
+- Password: rowenna567??
 ```
 
 ## Run tests
